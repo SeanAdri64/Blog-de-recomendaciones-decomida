@@ -83,29 +83,6 @@ body {
     margin-top: 20px;
 }
 
-/* Contactenos */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea, button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-button {
-    background-color: #b31b1b;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background-c }
-
 /*Estilos seccion Contactenos (Jeffersson)*/
 .contact-body {
   background-color: white;
