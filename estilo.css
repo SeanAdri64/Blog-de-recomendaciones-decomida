@@ -74,7 +74,7 @@ nav a {
 
 /* Botón Inicio destacado */
 .inicio {
-  background-color: #32CD32; /* verde */
+  background-color: #d49c03; 
 }
 
 /* Hover */
@@ -84,7 +84,7 @@ nav a:hover {
 
 /* Enlace activo (cuando estamos en esa página) */
 nav a.active {
-  background-color: #32CD32;
+  background-color: #e8b006;
   color: white;
 }
 
