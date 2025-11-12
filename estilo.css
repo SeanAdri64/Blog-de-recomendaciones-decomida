@@ -1,0 +1,107 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f3;
+    color: #333;
+}
+
+/* Barra de navegacion */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b31b1b;
+    padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.plato {
+    text-align: center;
+    background-color: #f0e4d7;
+    padding: 60px 20px;
+}
+
+.plato h2 {
+    color: #b31b1b;
+}
+
+/* contenido */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+.content article {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* QUIENES SOMOS */
+.about, .contact {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Contactenos */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #b31b1b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-c
