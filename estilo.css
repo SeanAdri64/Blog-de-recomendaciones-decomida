@@ -139,72 +139,97 @@ body {
 }
 
 /*Estilos seccion Contactenos (Jeffersson)*/
-.contact-body {
+body {
   background-color: white;
   font-family: Arial, sans-serif;
   color: #8B4513;
+  margin: 0;
+  padding: 0;
 }
 
-.contact-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px;
+.titulo-contacto {
+  color: #8B4513;
+  font-size: 2.2em;
+  margin-top: 20px;
   text-align: center;
 }
 
-.contact-title {
-  color: #8B4513;
-  font-size: 36px;
-  margin-bottom: 10px;
+.descripcion-contacto {
+  color: #FFB347;
+  font-size: 1.1em;
+  margin: 20px 0 40px;
+  max-width: 700px;
+  text-align: center;
 }
 
-.contact-description {
-  color: #555;
-  font-size: 18px;
-  margin-bottom: 40px;
+.contenedor-contacto {
+  padding: 20px 60px;
 }
 
-.contact-content {
+.contacto-contenido {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 40px;
-  text-align: left;
+  flex-wrap: wrap;
 }
 
-.contact-info {
+.info-contacto {
   flex: 1;
-  min-width: 250px;
+  min-width: 280px;
+  background-color: #FFB34720;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form {
+.formulario-contacto {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
+  background-color: #32CD3210;
+  padding: 20px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.formulario-contacto label {
+  margin-top: 10px;
+  color: #8B4513;
+  font-weight: bold;
 }
 
-.contact-button {
-  background-color: #FFB347;
+.formulario-contacto input,
+.formulario-contacto textarea {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #8B4513;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-color: #32CD32;
+}
+
+.formulario-contacto button {
+  background-color: #32CD32;
   color: white;
   border: none;
-  padding: 12px;
-  border-radius: 8px;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
-.contact-button:hover {
-  background-color: #32CD32;
+.formulario-contacto button:hover {
+  background-color: #8B4513;
 }
+
 
 
