@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctenos</title>
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    
+    <header>
+        <center><h1 class="titulo-contacto">Contactenos</h1></center>
+    </header>
+
+    <main class="contenedor-contacto">
+       <center><p class="descripcion-contacto">
+            ¿Tienes una receta que quieres compartir o una duda sobre nuestros platos?
+            ¡Nos encanta hablar de comida! Escríbenos y te responderemos lo más pronto posible.
+.
+        </p></center> 
+
+        <section class="contacto-contenido">
+            <!-- Columna izquierda -->
+            <div class="info-contacto">
+                <h3>Mas informacion</h3>
+                <p><strong>Correo: 📧</strong> contacto@blogcomidas.com</p>
+                <p><strong>Telefono📱</strong> +57 310 456 7890</p>
+                <p><strong>Direccion:📍</strong> Calle 123 #45-67, Bogota</p>
+            </div>
+
+            <!-- Columna derecha -->
+            <form class="formulario-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
