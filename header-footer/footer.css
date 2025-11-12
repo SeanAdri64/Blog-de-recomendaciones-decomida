@@ -1,0 +1,41 @@
+/*FOOTER GENERAL  */
+.footer {
+  width: 100%;
+  background-color: #282421; /* Marrón */
+  padding: 20px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3); /* leve sombra superior (efecto 3D) */
+  border-top: 3px solid #32CD32; /* verde suave */
+}
+
+/* texto  */
+.footer-datos {
+  color: #FFB347; /* Naranja melocotón */
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* link  */
+.footer a {
+  color: #32CD32; /* Verde suave */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #FFD700; /* Dorado al pasar el mouse */
+}
+
+/*responsive  */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-datos {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}

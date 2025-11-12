@@ -1,0 +1,114 @@
+
+/*  nav */
+nav {
+  width: 100%;
+  background-color: #8B4513; /* marrón */
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between; /* separa logo y enlaces */
+  gap: 0;
+  align-items: center; /* centra verticalmente */
+  flex-wrap: wrap; /* hace que se adapte a pantallas pequeñas */
+  box-sizing: border-box;
+
+    /* --- EFECTO 3D --- */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* sombra externa */
+  border-bottom: 3px solid #5E2E0C; /* línea más oscura debajo */
+}
+
+/* log y texto*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+/* Contenedor de texto del logo */
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* FoodRoom */
+.food {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.room {
+  color: #FFB347;
+  font-weight: bold;
+}
+
+/* Lema debajo del título */
+.lema {
+  color: #eb8b46;
+  font-size: 14px;
+}
+
+/* ENLACES DE NAVEGACIÓN */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Botón Inicio destacado */
+.inicio {
+  background-color: #32CD32; /* verde */
+}
+
+/* Hover */
+nav a:hover {
+  color: #FFD700;
+}
+
+/* Enlace activo (cuando estamos en esa página) */
+nav a.active {
+  background-color: #32CD32;
+  color: white;
+}
+
+/* responsive*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* NUESTROS COLORES PRIMARIOS
+h1{
+    color: #8B4513 MARRON
+}
+
+div{
+    color:#32CD32;  VERDE SUAVE
+
+}
+
+p{
+  color: #FFB347; NARANJA MELOCOTON
+}*/
