@@ -104,4 +104,73 @@ button {
 }
 
 button:hover {
-    background-c
+    background-c }
+
+/*Estilos seccion Contactenos (Jeffersson)*/
+.contact-body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  color: #8B4513;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-title {
+  color: #8B4513;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-button {
+  background-color: #FFB347;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #32CD32;
+}
