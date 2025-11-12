@@ -6,37 +6,103 @@ body {
     color: #333;
 }
 
-/* Barra de navegacion */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b31b1b;
-    padding: 10px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+/*  nav */
+nav {
+  width: 100%;
+  background-color: #8B4513; /* marrón */
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between; /* separa logo y enlaces */
+  gap: 0;
+  align-items: center; /* centra verticalmente */
+  flex-wrap: wrap; /* hace que se adapte a pantallas pequeñas */
+  box-sizing: border-box;
+
+    /* --- EFECTO 3D --- */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* sombra externa */
+  border-bottom: 3px solid #5E2E0C; /* línea más oscura debajo */
 }
 
-.navbar .logo {
-    color: white;
-    font-size: 1.5em;
+/* log y texto*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.logo img {
+  width: 60px;
+  height: auto;
 }
 
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* Contenedor de texto del logo */
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
 
-.navbar ul li a:hover, .navbar ul li a.active {
-    text-decoration: underline;
+/* FoodRoom */
+.food {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.room {
+  color: #FFB347;
+  font-weight: bold;
+}
+
+/* Lema debajo del título */
+.lema {
+  color: #eb8b46;
+  font-size: 14px;
+}
+
+/* ENLACES DE NAVEGACIÓN */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Botón Inicio destacado */
+.inicio {
+  background-color: #32CD32; /* verde */
+}
+
+/* Hover */
+nav a:hover {
+  color: #FFD700;
+}
+
+/* Enlace activo (cuando estamos en esa página) */
+nav a.active {
+  background-color: #32CD32;
+  color: white;
+}
+
+/* responsive*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
 }
 
 /* HERO SECTION */
@@ -231,5 +297,45 @@ body {
   background-color: #8B4513;
 }
 
+/*FOOTER GENERAL  */
+.footer {
+  width: 100%;
+  background-color: #282421; /* Marrón */
+  padding: 20px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3); /* leve sombra superior (efecto 3D) */
+  border-top: 3px solid #32CD32; /* verde suave */
+}
 
+/* texto  */
+.footer-datos {
+  color: #FFB347; /* Naranja melocotón */
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* link  */
+.footer a {
+  color: #32CD32; /* Verde suave */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #FFD700; /* Dorado al pasar el mouse */
+}
+
+/*responsive  */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-datos {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
 
