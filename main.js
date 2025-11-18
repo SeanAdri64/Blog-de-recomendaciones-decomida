@@ -10,3 +10,11 @@ function loadHTML(id, file) {
 // Cargar header y footer
 loadHTML('menu', './header.html');
 loadHTML('footer', './footer.html');
+
+document.getElementById("formContacto").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    alert("Mensaje enviado correctamente. ¡Gracias por contactarnos!");
+
+    this.reset();
+});
