@@ -180,6 +180,51 @@ nav a.active {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+main #carouselExampleCaptions {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.carousel-item img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) brightness(0);
+}
+
+@media (max-width: 600px) {
+
+  #cuerpo {
+    padding: 15px;
+  }
+
+  #titulo {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .foto {
+    width: 130px;
+    height: 130px;
+  }
+
+  .infoNosotros {
+    font-size: 0.9rem;
+  }
+
+  .nombre {
+    font-size: 1.4rem;
+  }
+}
+
 
 
 /* Imagen de la tarjeta */
