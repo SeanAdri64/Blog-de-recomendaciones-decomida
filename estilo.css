@@ -6,109 +6,174 @@ body {
     color: #333;
 }
 
-/*  nav */
-nav {
-  width: 100%;
-  background-color: #8B4513; /* marrón */
-  padding: 10px 40px;
-  display: flex;
-  justify-content: space-between; /* separa logo y enlaces */
-  gap: 0;
-  align-items: center; /* centra verticalmente */
-  flex-wrap: wrap; /* hace que se adapte a pantallas pequeñas */
-  box-sizing: border-box;
-
-    /* --- EFECTO 3D --- */
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* sombra externa */
-  border-bottom: 3px solid #5E2E0C; /* línea más oscura debajo */
+/* Animación para las cards */
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
 }
 
-/* log y texto*/
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover en imágenes */
+.imagesRestaurants,
+.img-thumbnail {
+  transition: transform 0.4s ease, box-shadow 0.4s;
+}
+
+.imagesRestaurants:hover,
+.img-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Botón volver arriba */
+#btnTop {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: opacity 0.3s;
+}
+
+#btnTop:hover {
+  opacity: 0.8;
+}
+
+.imagesRestaurants{
+  height: 290px;
+  width: 390px;
+}
+main{
+  margin-top: 70px;
+  padding-top: 20px;
+}
+@media (max-width: 992px) {
+  main{
+    margin-top: 120px;
+    padding-top: 40px;
+  }
+}
+h3 {
+color: #b31b1b;
+}
+/* NAV */
+ 
+nav {
+  width: 100%;
+  background-color: #8b4513e8;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #f6e5d9;
+    position: fixed;  
+  /* Nav fijo */
+  position: fixed;
+  top: 0;      
+  left: 0;      
+  z-index: 1000;
+}
+ 
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
+ 
 .logo img {
   width: 60px;
   height: auto;
 }
-
-/* Contenedor de texto del logo */
+ 
 .text-logo {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
-
-/* FoodRoom */
+ 
 .food {
   color: white;
   font-weight: bold;
   font-size: 32px;
 }
-
+ 
+.foodcolor{
+  color:brown
+}
+ 
 .room {
   color: #FFB347;
   font-weight: bold;
 }
-
-/* Lema debajo del título */
+ 
 .lema {
-  color: #eb8b46;
+  color: #eedacc;
   font-size: 14px;
 }
-
-/* ENLACES DE NAVEGACIÓN */
+ 
+/* Contenedor de enlaces */
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+ 
+/* Enlaces de navegación */
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   transition: color 0.3s, background-color 0.3s;
   padding: 8px 12px;
   border-radius: 8px;
 }
+ 
 
-/* Botón Inicio destacado */
-.inicio {
-  background-color: #d49c03; 
-}
-
-/* Hover */
+ 
 nav a:hover {
   color: #FFD700;
 }
-
-/* Enlace activo (cuando estamos en esa página) */
+ 
 nav a.active {
   background-color: #e8b006;
   color: white;
 }
-
-/* responsive*/
+ 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .logo {
-    margin-bottom: 10px;
+ 
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
+/* AQUI TERMINA EL NAV*/
 
 /* HERO SECTION */
 .plato {
     text-align: center;
-    background-color: #f0e4d7;
+    margin-top: 30px;
     padding: 60px 20px;
 }
 
@@ -138,93 +203,69 @@ nav a.active {
 
 /*Parte de quienes somos*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-#cuerpo {
-
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
-}
-
-
-#cards {
-    max-width: 1000px;
-    width: 100%;
-}
-
-
-#titulo {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #222;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 main #carouselExampleCaptions {
   width: 100%;
   margin: 0 auto;
 }
-
-
-
+ 
+ 
+ 
 .carousel-item img {
   height: 700px;
   object-fit: cover;
 }
-
+ 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1) brightness(0);
 }
-
+ 
+/* tablet*/
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  .infoNosotros {
+    padding-left: 0;
+  }
+ 
+  .foto {
+    width: 160px;
+    height: 160px;
+  }
+}
+ 
+ 
+/* celular */
 @media (max-width: 600px) {
-
+ 
   #cuerpo {
     padding: 15px;
   }
-
+ 
   #titulo {
     font-size: 2rem;
   }
-
+ 
   .card {
     padding: 20px;
   }
-
+ 
   .foto {
     width: 130px;
     height: 130px;
   }
-
+ 
   .infoNosotros {
     font-size: 0.9rem;
   }
-
+ 
   .nombre {
     font-size: 1.4rem;
   }
 }
-
 
 
 /* Imagen de la tarjeta */
@@ -253,7 +294,7 @@ main #carouselExampleCaptions {
 body {
   background-color: white;
   font-family: Arial, sans-serif;
-  color: #8B4513;
+  color: #201e1e;
   margin: 0;
   padding: 0;
 }
@@ -342,45 +383,95 @@ body {
   background-color: #8B4513;
 }
 
-/*FOOTER GENERAL  */
+/* FOOTER GENERAL */
 .footer {
   width: 100%;
-  background-color: #282421; /* Marrón */
-  padding: 20px 10px;
   text-align: center;
-  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3); /* leve sombra superior (efecto 3D) */
-  border-top: 3px solid #32CD32; /* verde suave */
+  padding: 20px 0;
+  background-color: #f8f8f8;
 }
-
-/* texto  */
-.footer-datos {
-  color: #FFB347; /* Naranja melocotón */
-  margin: 6px 0;
-  font-size: 14px;
+ 
+/* Línea delgada arriba del logo */
+.footer .card-header {
+  border-top: 2px solid #8B4513;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
-
-/* link  */
+ 
+/* Centrar la card en el footer */
+.footer .card {
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+ 
+/* Logo dentro del footer */
+.footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+ 
+.footer .logo img {
+  width: 60px;
+  height: auto;
+}
+ 
+.footer .text-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+ 
+.footer .food {
+  font-weight: bold;
+  font-size: 28px;
+  color: #8B4513;
+}
+ 
+.footer .room {
+  color: #FFB347;
+}
+ 
+.footer .lema {
+  font-size: 12px;
+  color: #eb8b46;
+}
+ 
+/* Card body */
+.footer .card-body p {
+  margin: 5px 0;
+}
+ 
+/* Links */
 .footer a {
-  color: #32CD32; /* Verde suave */
+  color: brown;
   text-decoration: none;
   font-weight: bold;
 }
-
+ 
 .footer a:hover {
-  color: #FFD700; /* Dorado al pasar el mouse */
+  color: #FFD700;
 }
-
-/*responsive  */
+ 
+/* Responsive */
 @media (max-width: 600px) {
   .footer {
     padding: 15px;
   }
-
-  .footer-datos {
+ 
+  .footer .card-body p {
     font-size: 13px;
     line-height: 1.4;
   }
+ 
+  .footer .logo {
+    flex-direction: column;
+  }
 }
+ 
 
+/* hasta aqui footer*/
